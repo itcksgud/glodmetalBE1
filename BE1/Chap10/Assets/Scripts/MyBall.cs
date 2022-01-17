@@ -10,8 +10,7 @@ public class MyBall : MonoBehaviour
 
     void Start()
     {
-        rigid = GetComponent<Rigidbody>();
-        
+        rigid = GetComponent<Rigidbody>();   
     }
 
     // RigidBody 관련 코드는 FixedUpdate에 작성
@@ -38,9 +37,14 @@ public class MyBall : MonoBehaviour
         rigid.AddForce(vec, ForceMode.Impulse);
         /*rigid.AddTorque(Vector3.up);*/
     }
-    private void OnTriggerStay(Collider other)
+    /*private void OnTriggerStay(Collider other)
     {
         if (other.name == "Cube")
             rigid.AddForce(Vector3.up * 2, ForceMode.Impulse);
+    }*/
+
+    public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 2, ForceMode.Impulse);
     }
 }
