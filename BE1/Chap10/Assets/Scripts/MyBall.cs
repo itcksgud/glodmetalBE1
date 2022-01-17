@@ -36,6 +36,11 @@ public class MyBall : MonoBehaviour
         }
         Vector3 vec = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
         rigid.AddForce(vec, ForceMode.Impulse);
-        rigid.AddTorque(Vector3.up);
+        /*rigid.AddTorque(Vector3.up);*/
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.name == "Cube")
+            rigid.AddForce(Vector3.up * 2, ForceMode.Impulse);
     }
 }

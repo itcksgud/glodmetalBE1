@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{6C0CB442-3A42-5422-D7FE-F0DFA540D62F}</ProjectGuid>
+    <ProjectGuid>{E2F11A06-4531-C657-1B7B-CF56C2ECFCBC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MyBall.cs" />
+    <Compile Include="Assets\Scripts\OtherBalls.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
