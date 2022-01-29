@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     float h, v;
     Rigidbody rigid;
     Vector3 vec;
-    public int jumpPower; 
+    public int jumpPower;
     bool isJump;
     public int itemCount = 0;
     AudioSource sound;
@@ -24,9 +24,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         //มกวม
-        if(Input.GetButtonDown("Jump")&&!isJump)
+        if (Input.GetButtonDown("Jump") && !isJump)
         {
             isJump = true;
             rigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
@@ -50,13 +50,13 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag=="Item")
+        if (other.tag == "Item")
         {
             sound.Play();
             itemCount++;
             manager.GetItem(itemCount);
         }
-        else if (other.tag=="Goal")
+        else if (other.tag == "Goal")
         {
             Debug.Log("zz");
             if (itemCount == manager.totalItemCount)
