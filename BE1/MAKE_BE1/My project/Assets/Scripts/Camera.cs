@@ -16,6 +16,5 @@ public class Camera : MonoBehaviour
     void Update()
     {
         transform.position = player.transform.position + cameraPos;
-        
     }
 }

@@ -21,13 +21,7 @@ public class Item : MonoBehaviour
     {
         if(other.gameObject.name=="Player")
         {
-            
-            /*Player ball = other.GetComponent<Player>();
-            ball.itemCount++;
-            AudioSource sound = other.GetComponent<AudioSource>();*/
-            /*sound.Play();*/
             gameObject.SetActive(false);
-
         }
     }
 }

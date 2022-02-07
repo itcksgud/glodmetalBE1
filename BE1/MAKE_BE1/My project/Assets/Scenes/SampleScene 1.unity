@@ -252,7 +252,6 @@ MonoBehaviour:
   jumpPower: 5
   itemCount: 0
   manager: {fileID: 1152301290}
-  stage: 0
 --- !u!82 &326791925
 AudioSource:
   m_ObjectHideFlags: 0

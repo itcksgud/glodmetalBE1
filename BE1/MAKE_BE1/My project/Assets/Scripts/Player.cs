@@ -24,14 +24,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //มกวม
         if (Input.GetButtonDown("Jump") && !isJump)
         {
             isJump = true;
             rigid.AddForce(new Vector3(0, jumpPower, 0), ForceMode.Impulse);
         }
-
     }
 
     private void FixedUpdate()
